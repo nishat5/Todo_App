@@ -1,0 +1,139 @@
+.todoListWrapper {
+  width: 80%;
+  padding: 15px 5px;
+  margin: 25px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fcfbfc;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.inputDiv {
+  /* text-align: center; */
+  width: 100%;
+  margin: 15px auto;
+  /* border: 1px solid tomato; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+h1 {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+input {
+  padding: 0 10px;
+  width: 70%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #7e7e81;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border-radius: 1px;
+  font-family: "Poppins", system-ui;
+}
+
+input:focus {
+  border: 1px solid rgb(179, 173, 173);
+  background-color: white;
+}
+
+#addButton {
+  padding: 7px 12px;
+  background-color: #2a84d3;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  width: 17%;
+  border-radius: 3px;
+  outline: none;
+  font-family: "Poppins", system-ui;
+  transition: all 0.5s ease;
+}
+
+#addButton:hover {
+  background-color: #1e73be;
+}
+
+.delBtn {
+  padding: 6px 18px;
+  background-color: rgb(43, 41, 41);
+  /* color: black; */
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+  font-family: "Poppins", system-ui;
+  transition: all 0.3s ease;
+}
+
+.delBtn:hover {
+  background-color: rgb(247, 30, 30);
+}
+
+.innerListDiv {
+  border-bottom: 1.5px solid silver;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 8px 0;
+  width: 70%;
+  margin: 15px auto;
+  /* align-content: center; */
+}
+
+.listDiv {
+  margin: 25px auto;
+}
+
+ul {
+  /* padding: 0%; */
+}
+
+.list {
+  list-style-type: none;
+  font-size: 21px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.unavailableList {
+  list-style-type: none;
+  margin: 50px 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(168, 164, 164);
+}
+
+@media (max-width: 699px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .list {
+    font-size: 18px;
+  }
+
+  .unavailableList {
+    font-size: 16px;
+  }
+
+  .delBtn {
+    font-size: 16px;
+  }
+
+  #addButton {
+    width: 20%;
+  }
+}
